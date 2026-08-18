@@ -14,7 +14,6 @@ import {
   SiTypescript, 
   SiTailwindcss, 
   SiExpress, 
-  SiFlask, 
   SiMongodb, 
   SiMysql, 
   SiPostman 
@@ -134,7 +133,12 @@ const certificates = [
 
 const timeline = [
   {
-    title: "AI-Powered Job Matchmaking Porta(MERN Fullstack)",
+    title: "SkyElite Fligth Booking & Reservation System",
+    tool: "React, Node.js, MongoDB, Express.js",
+    description: "Developed a full-stack Flight Booking and Reservation System using the MERN Stack that enables users to search and book flights through a responsive and user-friendly platform. Implemented multi-role authentication (User and Admin), one-way and round-trip flight search, flight filtering, seat selection, passenger management, online payment, booking confirmation, and reservation history.",
+  },
+  {
+    title: "AI-Powered Job Matchmaking Portal(MERN Fullstack)",
     tool: "React, Node.js, MongoDB, Express.js",
     description:
       "Developed a full-stack recruitment platform using the MERN stack that connects job seekers and recruiters through AI-based job recommendations. Implemented multi-role authentication (Candidate, HR, Admin), resume analysis, job applications, and dashboard analytics with responsive UI.",
