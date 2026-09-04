@@ -24,8 +24,9 @@ const navLinks = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
-  { id: "certificates", label: "Certificates" },
   { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "certificates", label: "Certificates" },
   { id: "contact", label: "Contact Us" },
 ];
 
@@ -74,6 +75,81 @@ const stats = [
   { value: "5+", label: "Projects Completed" },
   { value: "MERN", label: "Stack Expert" },
   { value: "Always", label: "Continuous Learner" },
+];
+
+const projects = [
+  {
+    id: 1,
+    title: "SkyElite Flight Booking System",
+    description: "Full-stack MERN application with multi-role authentication, flight search, seat selection, and payment integration.",
+    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    category: "Full Stack",
+    gradient: "from-cyan-500/20 via-blue-500/10 to-sky-500/20",
+    icon: "✈️",
+    features: ["Multi-role Auth", "Seat Selection", "Payment Gateway", "Booking History"],
+    liveLink: "https://flight-booking-reservation-system-2.vercel.app",
+    githubLink: "https://github.com/waranm408-prog/Flight-Booking-Reservation-system.git"
+  },
+  {
+    id: 2,
+    title: "AI Job Matchmaking Portal",
+    description: "MERN recruitment platform with AI-powered job recommendations, resume analysis, and analytics dashboard and admin page and HR Page.",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "AI"],
+    category: "Full Stack",
+    gradient: "from-violet-500/20 via-purple-500/10 to-fuchsia-500/20",
+    icon: "🤖",
+    features: ["AI Recommendations", "Resume Analysis", "Dashboard", "Analytics"],
+    liveLink: "https://ai-job-portal-2eju-one.vercel.app",
+    githubLink: "https://github.com/waranm408-prog/Ai-job-portal.git"
+  },
+  {
+    id: 3,
+    title: "Smart Expense Tracker",
+    description: "Responsive expense management application with category tracking, analytics dashboard, and data visualization.",
+    technologies: ["React", "Tailwind CSS", "Chart.js"],
+    category: "Frontend",
+    gradient: "from-green-500/20 via-emerald-500/10 to-teal-500/20",
+    icon: "💰",
+    features: ["Category Tracking", "Analytics", "CRUD Operations", "Visualization"],
+    liveLink: "https://smart-expense-smt.netlify.app",
+    githubLink: "https://github.com/waranm408-prog/smart-Expense-Tracker.git"
+  },
+  {
+    id: 4,
+    title: "Notes Management App",
+    description: "Note-taking application with secure authentication and CRUD functionality for creating and organizing personal notes.",
+    technologies: ["React", "Tailwind CSS", "Local Storage"],
+    category: "Frontend",
+    gradient: "from-amber-500/20 via-orange-500/10 to-yellow-500/20",
+    icon: "📝",
+    features: ["CRUD Operations", "Authentication", "Responsive Design", "Note Organization"],
+    liveLink: "https://note-appdemo.netlify.app",
+    githubLink: "https://github.com/waranm408-prog/Note-App"
+  },
+  {
+    id: 5,
+    title: "Priya-Textils E-commerce website",
+    description: "Modern e-commerce website with product catalog, shopping cart, and checkout functionalityand admin page and paymentgetway.",
+    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    category: "FullStack",
+    gradient: "from-pink-500/20 via-rose-500/10 to-red-500/20",
+    icon: "🛒",
+    features: ["Product Catalog", "Shopping Cart", "Checkout", "User Reviews"],
+    liveLink: "https://priya-textiles.vercel.app",
+    githubLink: "https://github.com/waranm408-prog/Priya-E-com.git"
+  },
+  {
+    id: 6,
+    title: "Portfolio Website",
+    description: "Personal portfolio with modern glassmorphism design, smooth animations, and responsive layout.",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    category: "Frontend",
+    gradient: "from-indigo-500/20 via-blue-500/10 to-cyan-500/20",
+    icon: "🎨",
+    features: ["Glassmorphism", "Animations", "Responsive", "Modern UI"],
+    liveLink: "https://mahesh-portfolio-dflw-pi.vercel.app",
+    githubLink: "https://github.com/waranm408-prog/mahesh-Portfolio.git"
+  }
 ];
 
 const certificates = [
@@ -132,30 +208,9 @@ const certificates = [
 ];
 
 const timeline = [
-  {
-    title: "SkyElite Fligth Booking & Reservation System",
-    tool: "React, Node.js, MongoDB, Express.js",
-    description: "Developed a full-stack Flight Booking and Reservation System using the MERN Stack that enables users to search and book flights through a responsive and user-friendly platform. Implemented multi-role authentication (User and Admin), one-way and round-trip flight search, flight filtering, seat selection, passenger management, online payment, booking confirmation, and reservation history.",
-  },
-  {
-    title: "AI-Powered Job Matchmaking Portal(MERN Fullstack)",
-    tool: "React, Node.js, MongoDB, Express.js",
-    description:
-      "Developed a full-stack recruitment platform using the MERN stack that connects job seekers and recruiters through AI-based job recommendations. Implemented multi-role authentication (Candidate, HR, Admin), resume analysis, job applications, and dashboard analytics with responsive UI.",
-  },
-   {
-    title: "Smart Expense Tracker(frontend)",
-    tool: "Reactjs, Tailwind CSS",
-    description:
-      "Built a responsive expense management application to track daily income and expenses. Features include category-wise expense tracking, analytics dashboard, CRUD operations, and data visualization.     ",
-  },
-  {
-  title: "Notes Management App (Frontend)",
-    tool: "Reactjs, Tailwind CSS",
-    description:
-      "Designed and developed a note-taking application with secure authentication and CRUD functionality. Users can create, edit, delete, and organize personal notes,Developed a responsive Notes Management Application using React.js and Tailwind CSS for creating and organizing personal notes.     ",
-  },
-  {
+  
+  
+{
     title: "Internship Experience(UI/UX Design)",
     tool: "2026 (1-month)",
     description:
@@ -501,6 +556,146 @@ function App() {
           </div>
         </section>
 
+        <section id="experience" className="section-container scroll-mt-24">
+          <div className="section-header">
+            <p className="text-sm uppercase tracking-[0.35em] text-cyan-300 ">
+              Experience
+            </p>
+            <h2 className="mt-3 text-4xl font-semibold text-white sm:text-5xl ">
+              Project Journey & Internship Experience
+            </h2>
+          </div>
+          <div className="relative mt-12 space-y-10 ">
+            <div className="absolute left-5 top-6 hidden h-full w-px bg-cyan-500/20 md:block" />
+            {timeline.map((entry, index) => (
+              <div
+                key={entry.title}
+                className="relative flex flex-col gap-4 pl-8 md:flex-row md:items-start md:gap-6"
+              >
+                <div className="absolute left-0 top-2 flex h-10 w-10 items-center justify-center rounded-full border border-cyan-500/30 bg-slate-950/80 shadow-lg shadow-cyan-500/10">
+                  <span className="text-cyan-300">{index + 1}</span>
+                </div>
+                <div className="glass-card rounded-4xl border border-white/10 p-8 shadow-xl shadow-slate-950/10">
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                    <h3 className="text-2xl font-semibold text-white">
+                      {entry.title}
+                    </h3>
+                    <span className="rounded-full bg-slate-900/80 px-4 py-2 text-sm text-cyan-200">
+                      {entry.tool}
+                    </span>
+                  </div>
+                  <p className="mt-4 text-slate-300">{entry.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="projects" className="section-container scroll-mt-24">
+          <div className="section-header">
+            <span className="text-sm uppercase tracking-[0.35em] text-cyan-300">
+              Projects
+            </span>
+            <h2 className="mt-3 text-4xl font-semibold text-white sm:text-5xl">
+              Featured Work
+            </h2>
+            <p className="mt-4 text-lg text-slate-300">
+              Explore my collection of full-stack and frontend projects built with modern technologies
+            </p>
+          </div>
+          
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project) => (
+              <div
+                key={project.id}
+                className="glass-card group overflow-hidden rounded-4xl border border-white/10 shadow-xl shadow-slate-950/15 transition-all duration-300 hover:-translate-y-2 hover:shadow-cyan-500/20"
+              >
+                {/* Project Header with Icon */}
+                <div className={`relative h-48 overflow-hidden bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
+                  <div className="absolute inset-0 bg-slate-950/60 backdrop-blur-sm" />
+                  <div className="relative z-10 text-center">
+                    <div className="mb-4 text-6xl">{project.icon}</div>
+                    <span className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold text-cyan-200 backdrop-blur-xl border border-white/20">
+                      {project.category}
+                    </span>
+                  </div>
+                  {/* Decorative overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+
+                {/* Project Content */}
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-white mb-3 line-clamp-2 min-h-[3.5rem]">
+                    {project.title}
+                  </h3>
+                  
+                  <p className="text-sm text-slate-400 mb-4 line-clamp-3 min-h-[4.5rem]">
+                    {project.description}
+                  </p>
+
+                  {/* Technologies */}
+                  <div className="mb-4">
+                    <p className="text-xs uppercase tracking-wider text-cyan-300 mb-2">Tech Stack</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, index) => (
+                        <span
+                          key={index}
+                          className="inline-block rounded-full bg-slate-900/70 px-3 py-1 text-xs font-medium text-slate-200 border border-white/5"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Features */}
+                  <div className="mb-4">
+                    <p className="text-xs uppercase tracking-wider text-cyan-300 mb-2">Key Features</p>
+                    <div className="grid grid-cols-2 gap-2">
+                      {project.features.map((feature, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center gap-2 text-xs text-slate-300"
+                        >
+                          <span className="text-cyan-400">✓</span>
+                          <span className="line-clamp-1">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="flex gap-3 mt-6">
+                    <a 
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-violet-500/10 border border-cyan-500/30 px-4 py-2.5 text-sm font-semibold text-cyan-100 transition-all duration-300 hover:bg-cyan-500/20 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/20"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                      Live
+                    </a>
+                    <a 
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-semibold text-slate-100 transition hover:bg-white/10"
+                    >
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                      </svg>
+                      Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section id="certificates" className="section-container scroll-mt-24">
           <div className="section-header">
             <p className="text-sm uppercase tracking-[0.35em] text-cyan-300">
@@ -568,41 +763,6 @@ function App() {
                     </svg>
                     View Certificate
                   </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="experience" className="section-container scroll-mt-24">
-          <div className="section-header">
-            <p className="text-sm uppercase tracking-[0.35em] text-cyan-300 ">
-              Experience
-            </p>
-            <h2 className="mt-3 text-4xl font-semibold text-white sm:text-5xl ">
-              Project Journey
-            </h2>
-          </div>
-          <div className="relative mt-12 space-y-10 ">
-            <div className="absolute left-5 top-6 hidden h-full w-px bg-cyan-500/20 md:block" />
-            {timeline.map((entry, index) => (
-              <div
-                key={entry.title}
-                className="relative flex flex-col gap-4 pl-8 md:flex-row md:items-start md:gap-6"
-              >
-                <div className="absolute left-0 top-2 flex h-10 w-10 items-center justify-center rounded-full border border-cyan-500/30 bg-slate-950/80 shadow-lg shadow-cyan-500/10">
-                  <span className="text-cyan-300">{index + 1}</span>
-                </div>
-                <div className="glass-card rounded-4xl border border-white/10 p-8 shadow-xl shadow-slate-950/10">
-                  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                    <h3 className="text-2xl font-semibold text-white">
-                      {entry.title}
-                    </h3>
-                    <span className="rounded-full bg-slate-900/80 px-4 py-2 text-sm text-cyan-200">
-                      {entry.tool}
-                    </span>
-                  </div>
-                  <p className="mt-4 text-slate-300">{entry.description}</p>
                 </div>
               </div>
             ))}
