@@ -92,6 +92,18 @@ const projects = [
   },
   {
     id: 2,
+    title: "Priya-Textils E-commerce website",
+    description: "Modern e-commerce website with product catalog, shopping cart, and checkout functionalityand admin page and paymentgetway.",
+    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    category: "FullStack",
+    gradient: "from-pink-500/20 via-rose-500/10 to-red-500/20",
+    icon: "🛒",
+    features: ["Product Catalog", "Shopping Cart", "Checkout", "User Reviews"],
+    liveLink: "https://priya-textiles.vercel.app",
+    githubLink: "https://github.com/waranm408-prog/Priya-E-com.git"
+  },
+  {
+    id: 3,
     title: "AI Job Matchmaking Portal",
     description: "MERN recruitment platform with AI-powered job recommendations, resume analysis, and analytics dashboard and admin page and HR Page.",
     technologies: ["React", "Node.js", "MongoDB", "Express", "AI"],
@@ -103,7 +115,7 @@ const projects = [
     githubLink: "https://github.com/waranm408-prog/Ai-job-portal.git"
   },
   {
-    id: 3,
+    id: 4,
     title: "Smart Expense Tracker",
     description: "Responsive expense management application with category tracking, analytics dashboard, and data visualization.",
     technologies: ["React", "Tailwind CSS", "Chart.js"],
@@ -115,7 +127,7 @@ const projects = [
     githubLink: "https://github.com/waranm408-prog/smart-Expense-Tracker.git"
   },
   {
-    id: 4,
+    id: 5,
     title: "Notes Management App",
     description: "Note-taking application with secure authentication and CRUD functionality for creating and organizing personal notes.",
     technologies: ["React", "Tailwind CSS", "Local Storage"],
@@ -126,18 +138,7 @@ const projects = [
     liveLink: "https://note-appdemo.netlify.app",
     githubLink: "https://github.com/waranm408-prog/Note-App"
   },
-  {
-    id: 5,
-    title: "Priya-Textils E-commerce website",
-    description: "Modern e-commerce website with product catalog, shopping cart, and checkout functionalityand admin page and paymentgetway.",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
-    category: "FullStack",
-    gradient: "from-pink-500/20 via-rose-500/10 to-red-500/20",
-    icon: "🛒",
-    features: ["Product Catalog", "Shopping Cart", "Checkout", "User Reviews"],
-    liveLink: "https://priya-textiles.vercel.app",
-    githubLink: "https://github.com/waranm408-prog/Priya-E-com.git"
-  },
+  
   {
     id: 6,
     title: "Portfolio Website",
@@ -304,7 +305,7 @@ function App() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <a href="#home" className="font-semibold text-white">
-            <span className="text-cyan-300"></span>Portfolio
+            <span className="text-cyan-300"></span>R
           </a>
 
           <nav className="hidden items-center gap-8 md:flex">
@@ -324,7 +325,7 @@ function App() {
 
           <div className="hidden items-center gap-4 md:flex">
             <a
-              href="/mahesh_MERN_ATS_Resume.pdf"
+              href="mahesh344.pdf"
               download
               className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-cyan-500 via-sky-500 to-violet-500 px-5 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-cyan-500/40"
             >
@@ -359,7 +360,7 @@ function App() {
             ))}
 
             <a
-              href="/mahesh_MERN_ATS_Resume.pdf"
+              href="mahesh344.pdf"
               download
               className="mt-4 inline-flex w-full max-w-xl items-center justify-center gap-2 rounded-full bg-linear-to-r from-cyan-500 via-sky-500 to-violet-500 px-6 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20"
             >
@@ -409,7 +410,7 @@ function App() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="mahesh_MERN_ATS_Resume.pdf"
+                href="mahesh344.pdf"
                 download
                 className="group inline-flex items-center gap-3 rounded-full bg-linear-to-r from-cyan-500 via-sky-500 to-violet-500 px-6 py-4 text-sm font-semibold text-slate-950 shadow-xl shadow-cyan-500/30 transition-transform duration-300 hover:-translate-y-1"
               >
@@ -562,7 +563,7 @@ function App() {
               Experience
             </p>
             <h2 className="mt-3 text-4xl font-semibold text-white sm:text-5xl ">
-              Project Journey & Internship Experience
+                Internship Experience
             </h2>
           </div>
           <div className="relative mt-12 space-y-10 ">
